@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<package>
+  <name>cob_scenarios</name>
+  <version>0.0.0</version>
+  <description>The cob_scenarios metapackage</description>
+
+  <license>LGPL</license>
+
+  <maintainer email="nhg@ipa.fhg.de">Nadia Hammoudeh Garcia</maintainer> 
+
+
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <run_depend>cob_demo</run_depend>
+
+  <export>
+    <metapackage/>
+  </export>
+</package>
