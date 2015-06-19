@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<launch>
+
+    <arg name="robot" default="cob4-2"/>
+
+    <node pkg="cob_demo" type="trigger_svrs.py" name="trigger_svrs" cwd="node" respawn="false" output="screen" >
+    </node>
+    <node pkg="cob_android_script_server" type="script_server_android.py" name="android_script_server" cwd="node" respawn="false" output="screen" >
+      <rosparam command="load" ns="control_buttons" file="$(find cob_demo)/config/demo/command_gui_buttons.yaml"/>
+    </node>
+
+</launch>

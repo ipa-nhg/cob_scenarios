@@ -1,0 +1,60 @@
+#group:
+#  group_name: <group_name>
+#  component_name: <component_name>
+#  buttons: [[button_name1,function_name1,parameter_name2,
+#    [button_name2,function_name2,parameter_name2]]
+
+group1:
+  group_name: base
+  component_name: base
+  buttons: [[stop,stop,omni],
+    [init,trigger,init],
+    [recover,trigger,recover]]
+group2:
+  group_name: arm_left
+  component_name: arm_left
+  buttons: [[stop,stop],
+    [init,init],
+    [recover,recover],
+    [home,move,home],
+    [folded,move,folded],
+    [side, move, side]]
+group3:
+  group_name: arm_right
+  component_name: arm_right
+  buttons: [[stop,stop],
+    [init,init],
+    [recover,recover],
+    [home,move,home],
+    [folded,move,folded],
+    [side, move, side]]
+group4:
+  group_name: gripper_left
+  component_name: gripper_left
+  buttons: [[stop,stop],
+    [recover,recover],
+    [home,move,home],
+    [open,move,open],
+    [close, move, close],
+    [spread, move, spread]]
+group5:
+  group_name: gripper_right
+  component_name: gripper_right
+  buttons: [[stop,stop],
+    [recover,recover],
+    [home,move,home],
+    [open,move,open],
+    [close, move, close],
+    [spread, move, spread]]
+group6:
+  group_name: mimic
+  component_name: mimic
+  buttons: [[happy,trigger,setMimicHappy]]
+group7:
+  group_name: light
+  component_name: light
+  buttons: [[cyan,trigger,setLightCyan]]
+group8:
+  group_name: sound
+  component_name: sound
+  buttons: [[play,trigger,playSound]]

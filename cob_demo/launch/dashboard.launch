@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<launch>
+
+	<arg name="robot" default="$(optenv ROBOT !!NO_ROBOT_SET!!)"/>
+
+	<!-- start dashboard -->
+	<node pkg="cob_dashboard" type="cob_dashboard" name="$(anon dashboard_node)" cwd="node" respawn="false" output="screen" />
+	
+	<!-- start command_gui -->
+	<node ns="command_gui" pkg="cob_command_gui" type="knoeppkes.py" name="$(anon command_gui_node)" cwd="node" respawn="false" output="screen" >
+		<!-- upload button parameters -->
+		<rosparam command="load" ns="control_buttons" file="$(find cob_demo)/config/demo/command_gui_buttons.yaml"/>
+	</node>
+
+</launch>

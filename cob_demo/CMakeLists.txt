@@ -12,6 +12,7 @@ find_package(catkin REQUIRED COMPONENTS
   cob_bringup
   cob_command_gui
   cob_dashboard
+  std_srvs
 )
 
 catkin_package(
