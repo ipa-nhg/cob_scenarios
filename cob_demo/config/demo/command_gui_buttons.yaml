@@ -54,6 +54,9 @@ group7:
   group_name: light
   component_name: light
   buttons: [[cyan,trigger,setLightCyan]]
+  buttons: [[red,trigger,setLightRed]]
+  buttons: [[green,trigger,setLightGreen]]
+  buttons: [[cyanCircle,trigger,setLightCyanCircle]]
 group8:
   group_name: sound
   component_name: sound

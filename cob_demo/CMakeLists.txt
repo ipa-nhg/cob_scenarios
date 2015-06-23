@@ -13,6 +13,7 @@ find_package(catkin REQUIRED COMPONENTS
   cob_command_gui
   cob_dashboard
   std_srvs
+  cob_light
 )
 
 catkin_package(
